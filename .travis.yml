@@ -1,14 +1,8 @@
 language: java
-jdk:
-  - openjdk8
-
-script: ./mvnw clean install
+./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+./mvnw test -B
 
 
-jobs:
-  include:
-    - stage: Test
-      script: ./mvnw clean test
 
 notification:
   email: akshayatp16@gmail.com
