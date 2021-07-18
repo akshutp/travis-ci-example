@@ -1,11 +1,22 @@
-language: java
-jdk:
-  - oraclejdk8
-install:
-  - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-script: ./mvnw clean install
-  
-
-
-notification:
-  email: akshayatp16@gmail.com
+{
+  "language": "java",
+  "os": [
+    "linux"
+  ],
+  "dist": "xenial",
+  "jdk": [
+    "openjdk8"
+  ],
+  "script": [
+    "./mvnw clean install"
+  ],
+  "notifications": {
+    "email": [
+      {
+        "recipients": [
+          "akshayatp16@gmail.com"
+        ]
+      }
+    ]
+  }
+}
