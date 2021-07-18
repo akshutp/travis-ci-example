@@ -1,8 +1,8 @@
 language: java
-install:
-./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-test:
-./mvnw test -B
+jdk:
+  - openjdk8
+
+script: ./mvnw clean install
 
 
 
