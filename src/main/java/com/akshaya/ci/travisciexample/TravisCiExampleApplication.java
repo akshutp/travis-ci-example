@@ -1,4 +1,4 @@
-package com.javatechie.travis.api;
+package com.akshaya.travis.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
