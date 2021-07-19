@@ -1,11 +1,16 @@
 language: java
+#sudo: false
+#script: "mvn test"
 jdk:
   - openjdk8
 install:
+  -sudo apt -get update
+  -sudo apt -get install build -essential
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
 
-script: ./mvnw clean install
+script:
+   -mvn test -B
 
 notifications:
   email: akshayatp16@gmail.com
