@@ -1,4 +1,4 @@
-package com.javatechie.travis.api;
+package com.akshaya.travis.api;
 
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
