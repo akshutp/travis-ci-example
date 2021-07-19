@@ -1,8 +1,9 @@
 language: java
-jdk: oraclejdk8
-
-install: true
-script: mvn install
+jdk: 
+  -openjdk8
+script:
+  -mvn test
+  -mvn clean package
 
 notifications:
   email: akshayatp16@gmail.com
