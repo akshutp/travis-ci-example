@@ -1,16 +1,8 @@
 language: java
-#sudo: false
-#script: "mvn test"
-jdk:
-  - openjdk8
-install:
-  -sudo apt -get update
-  -sudo apt -get install build -essential
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+jdk: oraclejdk8
 
-
-script:
-   -mvn test -B
+install: true
+script: mvn install
 
 notifications:
   email: akshayatp16@gmail.com
