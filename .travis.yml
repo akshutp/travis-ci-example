@@ -1,15 +1,7 @@
 language: java
 jdk:
   - openjdk8
-cache:
-  directories:
-  -$HOME/.m2
-
-script:
-  - java --version
-  - ./mvnw clean install
-  - ./mvnw test
-
+script: mvn package -DskipTests
 
 notifications:
   email: akshayatp16@gmail.com
