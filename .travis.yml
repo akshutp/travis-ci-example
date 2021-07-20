@@ -1,8 +1,15 @@
+arch: am64
 language: java
 jdk:
   - openjdk8
+cache:
+  directories:
+  -$HOME/.m2
 
-script: mvn clean verify
+script:
+  - java --version
+  - ./mvnw clean install
+  - ./mvnw test
 
 
 notifications:
