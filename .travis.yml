@@ -1,4 +1,3 @@
-arch: am64
 language: java
 jdk:
   - openjdk8
