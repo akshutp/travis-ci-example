@@ -1,9 +1,9 @@
 language: java
 jdk:
   - openjdk8
-script: 
-  - mvn package -DskipTests
-  - ./build.sh
-
+sudo: false
+cache:
+  -$HOME/.m2
+  -$home/.maven
 notifications:
   email: akshayatp16@gmail.com
